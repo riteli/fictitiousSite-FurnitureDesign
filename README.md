@@ -3,7 +3,7 @@
 ## 概要  
 [CodeJump](https://code-jump.com/store2-menu/)を元にデザインカンプから制作したストアサイトです。レスポンシブに対応しています。
 
-## URL  
+## 公開URL  
 [GitHub Pages](https://riteli.github.io/fictitiousSite-FurnitureDesign/)
 
 ## ポイント  
