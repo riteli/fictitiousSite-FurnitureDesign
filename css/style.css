@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+small {
+  font-size: 100%;
+}
+
+
+ .layout { /*フッターを下部に固定する */
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hover-opacity {
+  transition: opacity 0.5s;
+}
+
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  display: block;
+  margin: 60px auto 0 auto;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.page-title {
+  margin-top: 40px;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+/*-----------------------
+ヘッダー
+-----------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.header .logo a {
+  display: block;
+  width: 180px;
+  line-height: 1px;
+}
+
+/*-----------------------
+ハンバーガーメニュー
+-----------------------*/
+.hamburger-container .hamburger-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+}
+
+.hamburger-container .hamburger-menu-list {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hamburger-container .hamburger-overlay.isActived,
+.hamburger-container .hamburger-menu-list.isActived {
+  display: block;
+}
+
+.hamburger-container .hamburger-menu-list li {
+  width: 200px;
+  background: #333;
+}
+
+.hamburger-container .hamburger-menu-list li:not(:first-child) {
+  margin-top: 14px;
+}
+
+.hamburger-container .hamburger-menu-list a {
+  display: block;
+  color: #fff;
+}
+
+
+.menu-toggle-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.menu-toggle-btn .bar {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+
+.menu-toggle-btn .bar-top {
+  top: 10px;
+}
+
+.menu-toggle-btn .bar-bottom {
+  bottom: 10px;
+}
+
+.menu-toggle-btn .bar.isActived {
+  background: #fff;
+}
+
+.menu-toggle-btn .bar-top.isActived {
+  translate: 0 4px;
+  rotate: -45deg;
+}
+
+.menu-toggle-btn .bar-bottom.isActived {
+  translate: 0 -4px;
+  rotate: 45deg;
+}
+
+/*-----------------------
+メイン
+-----------------------*/
+.main {
+  margin-top: 80px;
+}
+
+/*-----------------------
+Product-list
+-----------------------*/
+.product-list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.product-list .product-name {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.product-list .price {
+  font-size: 0.75rem;
+}
+
+/*-----------------------
+TOPページ
+-----------------------*/
+.top-page .btn {
+  margin-top: 40px;
+}
+
+/*-----------------------
+PRODUCTSページ
+-----------------------*/
+.products-page .products-page-btn {
+  margin-top: 40px;
+}
+
+.products-page .products-page-btn ul {
+  justify-content: center;
+}
+
+.products-page .products-page-btn li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+}
+
+.products-page .products-page-btn li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.products-page .products-page-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.products-page .products-page-btn .current-page a {
+  background: #333;
+  color: #fff;
+}
+
+/*-----------------------
+PRODUCTページ
+-----------------------*/
+.product-page {
+  max-width: 800px;
+}
+
+.product-page .product-details {
+  margin-top: 30px;
+  gap: 30px 64px;
+}
+
+.product-page .product-img {
+  width: 400px;
+}
+
+.product-page .product-text {
+  max-width: 336px;
+}
+
+.product-page .product-text p:not(:first-child) {
+  margin-top: 30px;
+}
+
+.product-page .product-text dl {
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-page .product-text dt {
+  width: 30%;
+}
+
+.product-page .product-text dd {
+  width: 70%;
+}
+
+/*-----------------------
+ABOUTページ
+-----------------------*/
+.about-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-page p {
+  margin-top: 30px;
+}
+
+/*-----------------------
+COMPANYページ
+-----------------------*/
+.company-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.company-page .company-info {
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.company-page .company-info dt,
+.company-page .company-info dd {
+  padding: 20px 10px;
+  border-top: 1px solid #dcdbdb;
+}
+
+.company-page .company-info .no-border {
+  border: none;
+}
+
+.company-page .company-info dt {
+  width: 30%;
+}
+
+.company-page .company-info dd {
+  width: 70%;
+}
+
+.company-page .company-map {
+  margin-top: 40px;
+  filter: grayscale(100%);
+}
+
+.company-page .company-map iframe {
+  width: 100%;
+}
+
+/*-----------------------
+フッター
+-----------------------*/
+.footer {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+.footer .sns-links li {
+  font-size: 0.75rem
+}
+
+.footer .sns-links li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.footer p {
+  font-size: 0.625rem;
+}
+
+/*-----------------------
+SP
+-----------------------*/
+@media screen and (max-width: 900px) {
+  /*-----------------------
+  Product-list
+  -----------------------*/
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 19px;
+  }
+
+  /*-----------------------
+  PRODUCTSページ
+  -----------------------*/
+  .products-page .products-page-btn {
+    margin-top: 60px;
+  }
+
+  /*-----------------------
+  PRODUCTページ
+  -----------------------*/
+  .product-page .product-details {
+    flex-direction: column;
+  }
+
+  .product-page .product-img {
+    width: 100%;
+  }
+
+  .product-page .product-text {
+    max-width: 100%;
+  }
+
+  /*-----------------------
+  ABOUTページ
+  -----------------------*/
+  .about-page {
+    padding: 0 40px;
+  }
+
+  /*-----------------------
+  COMPANYページ
+  -----------------------*/
+  .company-page {
+    padding: 0 40px;
+  }
+
+  .company-page .company-info {
+    flex-direction: column;
+  }
+
+  .company-page .company-info dt,
+  .company-page .company-info dd {
+    width: 100%;
+  }
+
+  .company-page .company-info dt {
+    padding: 20px 10px 5px;
+  }
+
+  .company-page .company-info dd {
+    padding: 5px 10px 20px;
+    border: none;
+  }
+
+  /*-----------------------
+  フッター
+  -----------------------*/
+  .footer {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .footer .sns-links {
+    justify-content: center;
+  }
+
+  .footer p {
+    margin-top: 5px;
+  }
+}

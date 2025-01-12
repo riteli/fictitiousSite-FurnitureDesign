@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Furniture Design - COMPANY</title>
+  <meta name="description" content="テキストテキストテキストテキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="grid layout">
+    <header class="flex wrapper header">
+      <h1 class="logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt="Furniture Design"></a>
+      </h1>
+      <div class="flex hamburger-container">
+        <div class="hamburger-overlay">
+          <nav class="hamburger-menu-list" aria-label="ナビゲーションメニュー" aria-hidden="true">
+            <ul>
+              <li><a class="hover-opacity" href="./products/products-page-1.html">PRODUCTS</a></li>
+              <li><a class="hover-opacity" href="./about.html">ABOUT</a></li>
+              <li><a class="hover-opacity" href="./company.html">COMPANY</a></li>
+              <li><a class="hover-opacity" href="mailto:user@dammy.com" title="メールでお問い合わせ">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="hover-opacity menu-toggle-btn" type="button" aria-label="メニューを開閉" aria-expanded="false">
+          <span class="bar bar-top" aria-hidden="true"></span>
+          <span class="bar bar-bottom" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="company-page">
+        <h2 class="page-title">Company</h2>
+
+        <dl class="flex company-info">
+          <dt class="no-border">社名</dt>
+          <dd class="no-border">株式会社ファニチャーデザイン</dd>
+          <dt>住所</dt>
+          <dd>〒107-0062 東京都港区南青山１丁目××××××</dd>
+          <dt>設立</dt>
+          <dd>XXXX年XX月</dd>
+          <dt>資本金</dt>
+          <dd>XXXX万円</dd>
+          <dt>従業員数</dt>
+          <dd>XX名</dd>
+          <dt>事業内容</dt>
+          <dd>
+            <ul>
+              <li>家具、インテリアの企画・生産</li>
+              <li>家具、インテリアの販売</li>
+              <li>店舗の企画・デザイン・設計</li>
+            </ul>
+          </dd>
+        </dl>
+
+        <div class="company-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.5832287649855!2d139.72561535!3d35.66982095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c820ac932eb%3A0xc68079dd10afd971!2z44CSMTA3LTAwNjIg5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGx77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1736672545015!5m2!1sja!2sjp"
+            title="会社所在地の地図" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex wrapper footer">
+      <ul class="flex sns-links">
+        <li><a class="hover-opacity" href="https://www.instagram.com/" target="_blank"rel="noopener noreferrer">INSTAGRAM</a></li>
+        <li><a class="hover-opacity" href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a class="hover-opacity" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+        </li>
+      </ul>
+      <p><small>&copy; Furniture Design</small></p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
