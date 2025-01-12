@@ -3,6 +3,9 @@
 ## 概要  
 [CodeJump](https://code-jump.com/store2-menu/)を元にデザインカンプから制作したストアサイトです。レスポンシブに対応しています。
 
+## URL  
+[GitHub Pages](https://riteli.github.io/fictitiousSite-FurnitureDesign/)
+
 ## ポイント  
 ### ボタンデザインの工夫  
 枠線を加え、ホバー時の視覚的な変化をつけることで、クリック可能な箇所を直感的に理解できるようにしました。
